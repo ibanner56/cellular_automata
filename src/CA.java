@@ -54,7 +54,7 @@ public class CA extends Task{
                 }
                 public void run(int i) {
                     int[] neighborhood = new int[3];
-                    neighborhood[0] = currentCell[(i - 1) % n];
+                    neighborhood[0] = currentCell[(i - 1 + n) % n];
                     neighborhood[1] = currentCell[i];
                     neighborhood[2] = currentCell[(i + 1) % n];
                     // Ghetto binary calculation.
