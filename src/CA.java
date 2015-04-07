@@ -79,5 +79,9 @@ public class CA extends Task{
             currentCell = nextCell;
             nextCell = swap;
         }
+
+        System.out.println("Smallest popcount: " + min_popcount + " at step " + min_step);
+        System.out.println("Largest popcount: " + max_popcount + " at step " + max_step);
+        System.out.println("Final popcount: " + popcount.item + " at step " + s);
     }
 }
